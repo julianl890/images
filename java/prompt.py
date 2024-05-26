@@ -86,13 +86,13 @@ def getPaperRecommendedVersion(zip):
         return "Java 8"
 
 def getJavaName(zip):
-    try:
-        paper_recommended = getPaperRecommendedVersion(zip)
-        if paper_recommended:
-            logging.debug(f"Detected Paper recommended version: {paper_recommended}")
-            return paper_recommended
-    except Exception as e:
-        logging.error(f"Error detecting Paper recommended version: {e}")
+    # try:
+    #     paper_recommended = getPaperRecommendedVersion(zip)
+    #     if paper_recommended:
+    #         logging.debug(f"Detected Paper recommended version: {paper_recommended}")
+    #         return paper_recommended
+    # except Exception as e:
+    #     logging.error(f"Error detecting Paper recommended version: {e}")
 
     try:
         major_version = getJavaVersion(zip)
