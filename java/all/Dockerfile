@@ -1,6 +1,6 @@
 FROM ubuntu:20.04
 
-LABEL author="Stepan Fedotov <stepan@wisp.gg>" maintainer="Stepan Fedotov <stepan@wisp.gg>"
+LABEL author="Julian <julian@etheron.nl>" maintainer="Julian <julian@etheron.nl>"
 ARG DEBIAN_FRONTEND=noninteractive
 ENV LANG='en_US.UTF-8' LANGUAGE='en_US:en' LC_ALL='en_US.UTF-8'
 
