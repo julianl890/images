@@ -107,7 +107,7 @@ def getJavaName(zip):
     # Otherwise, just fallback to checking which version of java the files were built with.
     try:
         major_version = getJavaVersion(zip)
-        if major_version >= 65:
+        if major_version >= 62:
             return "Java 21"
         if major_version >= 61:
             return "Java 17"
