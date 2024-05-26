@@ -16,15 +16,15 @@ jobs:
       fail-fast: false
       matrix:
         tag:
-          - 8
+#          - 8
 #          - 8j9
-          - 11
+#          - 11
 #          - 11j9
-          - 16
+#          - 16
 #          - 16j9
-          - 17
-          - 19
-          - 21
+#          - 17
+#          - 19
+#          - 21
           - all
     steps:
       - uses: actions/checkout@v4
