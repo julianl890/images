@@ -10,7 +10,7 @@ RUN apt-get update -y && \
     locale-gen en_US.UTF-8 && \
     add-apt-repository -y ppa:openjdk-r/ppa && \
     apt-get update -y && \
-    apt-get install -y openjdk-8u312-b07-jdk-focal openjdk-11.0.13_8-jdk-focal openjdk-16-jdk-focal openjdk-17-jdk-jammy openjdk-21-jdk-jammy && \
+    apt-get install -y openjdk-8-jre openjdk-11-jre openjdk-16-jre openjdk-17-jre openjdk-21-jdk-jammy && \
     rm -rf /var/lib/apt/lists/*
 
 RUN ln -s /usr/lib/jvm/java-8-openjdk-$(dpkg --print-architecture)/jre/bin/java /usr/local/bin/java8 && \
