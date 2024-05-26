@@ -1,6 +1,6 @@
 FROM ubuntu:20.04
 
-LABEL author="Julian <julian@etheron.nl>" maintainer="Julian <julian@etheron.nl>"
+LABEL author="Stepan Fedotov <stepan@wisp.gg>" maintainer="Stepan Fedotov <stepan@wisp.gg>"
 ARG DEBIAN_FRONTEND=noninteractive
 ENV LANG='en_US.UTF-8' LANGUAGE='en_US:en' LC_ALL='en_US.UTF-8'
 
@@ -10,7 +10,7 @@ RUN apt-get update -y && \
     locale-gen en_US.UTF-8 && \
     add-apt-repository -y ppa:openjdk-r/ppa && \
     apt-get update -y && \
-    apt-get install -y openjdk-8-jre openjdk-11-jre openjdk-16-jre openjdk-17-jre openjdk-21-jdk-jammy && \
+    apt-get install -y openjdk-8-jre openjdk-11-jre openjdk-16-jre openjdk-17-jre openjdk-21-jdk && \
     rm -rf /var/lib/apt/lists/*
 
 RUN ln -s /usr/lib/jvm/java-8-openjdk-$(dpkg --print-architecture)/jre/bin/java /usr/local/bin/java8 && \
